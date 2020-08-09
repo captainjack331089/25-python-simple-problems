@@ -25,7 +25,7 @@ if __name__ == '__main__':
     valid_unit = ['c', 'celsius', 'f', 'fahrenheit']
     while unit not in valid_unit:
         unit = input('Please enter the unit(C/F):  ')
-        unit.lower()    
+        unit.lower()
 
     new_degree, old_unit, new_unit = temperature_Convert(degree, unit, valid_unit)
     print('%.2f %s -- > %.2f %s' %(degree, old_unit, new_degree, new_unit))
